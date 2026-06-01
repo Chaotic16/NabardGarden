@@ -19,7 +19,6 @@
   background: rgba(56, 139, 253, 0.12);
   border-color: rgba(56, 139, 253, 0.7);
   border-bottom-color: rgba(56, 139, 253, 1);
-  box-shadow: 0 0 8px rgba(56, 139, 253, 0.15);
 }
 
 .recall.revealed {
@@ -30,7 +29,6 @@
   border-radius: 0;
   padding-bottom: 1px;
   filter: blur(0);
-  box-shadow: none;
   cursor: default;
 }
 
@@ -60,59 +58,22 @@
 
 
 /* ============================================
-   SIDEBAR
+   BASE & BACKGROUND
    ============================================ */
 
-.site-header {
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.01em;
+body {
+  background-color: #0d1117 !important;
   color: #c9d1d9 !important;
-  padding: 16px !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  margin-bottom: 8px;
 }
 
-.sidebar {
-  font-size: 13px;
-}
-
-.filetree-sidebar .nav-item,
-.sidebar .nav-item {
-  font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 3px 12px;
-  color: #6e7681;
-  line-height: 1.5;
-}
-
-.filetree-sidebar .nav-item:hover,
-.sidebar .nav-item:hover {
-  color: #c9d1d9;
-}
-
-.filetree-sidebar .nav-item.active,
-.sidebar .nav-item.active {
-  color: #58a6ff;
-}
-
-.filetree-sidebar .folder-title,
-.sidebar .folder-title {
-  font-size: 12px;
-  font-weight: 500;
-  color: #8b949e;
-  padding: 5px 12px 2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.filetree-sidebar ul {
-  border-left: 1px solid rgba(255, 255, 255, 0.06);
-  margin-left: 18px;
-  padding-left: 0;
+.theme-dark {
+  --background-primary: #0d1117;
+  --background-secondary: #161b22;
+  --background-modifier-border: rgba(255,255,255,0.07);
+  --text-normal: #c9d1d9;
+  --text-muted: #8b949e;
+  --text-faint: #484f58;
+  --interactive-accent: #58a6ff;
 }
 
 
@@ -140,76 +101,132 @@
 
 
 /* ============================================
-   CONTENT AREA TYPOGRAPHY
+   SIDEBAR (FILE TREE)
    ============================================ */
 
-.markdown-preview-view {
-  max-width: 720px;
-  padding: 40px 48px !important;
-  font-size: 15px;
-  line-height: 1.8;
+.sidebar-content,
+.filetree-sidebar {
+  background-color: #0d1117 !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.07) !important;
 }
 
-.markdown-preview-view h1 {
-  font-size: 22px !important;
+.site-name,
+.site-header a {
+  font-size: 15px !important;
   font-weight: 500 !important;
-  color: #e6edf3;
-  letter-spacing: -0.01em;
-  margin-bottom: 20px;
-  line-height: 1.3;
+  color: #c9d1d9 !important;
+  letter-spacing: 0.01em;
 }
 
-.markdown-preview-view h2 {
-  font-size: 16px !important;
+.filetree-sidebar ul {
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  margin-left: 12px;
+}
+
+.filetree-sidebar li a,
+.nav-file-title,
+.nav-folder-title {
+  font-size: 12px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #6e7681 !important;
+  padding: 3px 8px !important;
+  line-height: 1.5 !important;
+}
+
+.filetree-sidebar li a:hover,
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: #c9d1d9 !important;
+}
+
+.filetree-sidebar li a.active,
+.nav-file-title.active {
+  color: #58a6ff !important;
+}
+
+.nav-folder-title {
   font-weight: 500 !important;
-  color: #c9d1d9;
-  margin-top: 32px;
-  margin-bottom: 12px;
-  padding-top: 6px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.markdown-preview-view h3 {
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  color: #8b949e;
-  margin-top: 20px;
-  margin-bottom: 8px;
-}
-
-.markdown-preview-view p {
-  color: #8b949e;
-  margin-bottom: 16px;
-}
-
-.markdown-preview-view a {
-  color: #58a6ff;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(56, 139, 253, 0.3);
-}
-
-.markdown-preview-view a:hover {
-  border-bottom-color: rgba(56, 139, 253, 0.7);
-}
-
-.markdown-preview-view strong {
-  color: #c9d1d9;
-  font-weight: 500;
+  color: #8b949e !important;
 }
 
 
 /* ============================================
-   NOTE META (tags, status, timestamps)
+   CONTENT AREA
+   ============================================ */
+
+.content {
+  max-width: 680px !important;
+  padding: 40px 48px !important;
+  margin: 0 auto;
+}
+
+.markdown-preview-view,
+.markdown-rendered {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+  color: #8b949e !important;
+}
+
+h1, .markdown-rendered h1 {
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  color: #e6edf3 !important;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+h2, .markdown-rendered h2 {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #c9d1d9 !important;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+h3, .markdown-rendered h3 {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #8b949e !important;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.markdown-rendered p {
+  margin-bottom: 14px;
+}
+
+.markdown-rendered a {
+  color: #58a6ff !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(56, 139, 253, 0.3);
+}
+
+.markdown-rendered a:hover {
+  border-bottom-color: rgba(56, 139, 253, 0.7);
+}
+
+.markdown-rendered strong {
+  color: #c9d1d9 !important;
+  font-weight: 500 !important;
+}
+
+
+/* ============================================
+   NOTE META
    ============================================ */
 
 .header-meta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 10px !important;
   flex-wrap: wrap;
-  margin-bottom: 16px;
-  font-size: 11px;
-  color: #484f58;
+  margin-bottom: 20px;
 }
 
 .header-tags {
@@ -225,13 +242,20 @@
   background: rgba(56, 139, 253, 0.08) !important;
   border: 1px solid rgba(56, 139, 253, 0.2) !important;
   color: #58a6ff !important;
+  text-decoration: none !important;
 }
 
 .timestamps {
-  font-size: 11px;
-  color: #484f58;
+  font-size: 11px !important;
+  color: #484f58 !important;
   display: flex;
   gap: 12px;
+}
+
+.timestamps div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 
@@ -240,53 +264,50 @@
    ============================================ */
 
 .callout {
-  border-left: 3px solid rgba(56, 139, 253, 0.5) !important;
-  background: rgba(56, 139, 253, 0.05) !important;
   border-radius: 0 6px 6px 0 !important;
   padding: 12px 16px !important;
   margin: 16px 0 !important;
+  border-left-width: 3px !important;
 }
 
 .callout-title {
   font-size: 11px !important;
   font-weight: 500 !important;
-  color: #58a6ff !important;
-  margin-bottom: 6px !important;
   letter-spacing: 0.05em !important;
-  text-transform: uppercase !important;
+  margin-bottom: 6px !important;
 }
 
-.callout[data-callout="warning"],
-.callout[data-callout="caution"] {
-  border-left-color: rgba(210, 153, 34, 0.5) !important;
-  background: rgba(210, 153, 34, 0.05) !important;
+.callout-content p {
+  margin: 0 !important;
+  font-size: 13px !important;
 }
 
-.callout[data-callout="warning"] .callout-title,
-.callout[data-callout="caution"] .callout-title {
+
+/* ============================================
+   CODE BLOCKS
+   ============================================ */
+
+pre {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 6px !important;
+  padding: 16px !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+code {
+  font-size: 12px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-radius: 3px !important;
+  padding: 0.1em 0.4em !important;
   color: #e3b341 !important;
 }
 
-.callout[data-callout="success"],
-.callout[data-callout="tip"] {
-  border-left-color: rgba(63, 185, 80, 0.5) !important;
-  background: rgba(63, 185, 80, 0.05) !important;
-}
-
-.callout[data-callout="success"] .callout-title,
-.callout[data-callout="tip"] .callout-title {
-  color: #3fb950 !important;
-}
-
-.callout[data-callout="danger"],
-.callout[data-callout="error"] {
-  border-left-color: rgba(248, 81, 73, 0.5) !important;
-  background: rgba(248, 81, 73, 0.05) !important;
-}
-
-.callout[data-callout="danger"] .callout-title,
-.callout[data-callout="error"] .callout-title {
-  color: #f85149 !important;
+pre code {
+  background: transparent !important;
+  padding: 0 !important;
+  color: inherit !important;
 }
 
 
@@ -294,14 +315,14 @@
    RIGHT PANEL (TOC + BACKLINKS)
    ============================================ */
 
-.right-sidebar,
-.sidebar-right {
-  font-size: 12px;
+.right-sidebar {
+  background-color: #0d1117 !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.07) !important;
   padding: 20px 14px !important;
+  font-size: 12px !important;
 }
 
 .right-sidebar h4,
-.sidebar-right h4,
 .backlinks-title,
 .toc-title {
   font-size: 10px !important;
@@ -312,45 +333,17 @@
   margin-bottom: 8px !important;
 }
 
-.backlink-item,
-.toc-item {
-  font-size: 12px;
-  color: #6e7681;
-  padding: 3px 0;
+.right-sidebar a {
+  color: #6e7681 !important;
+  font-size: 12px !important;
+  text-decoration: none !important;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
+  padding: 3px 0;
 }
 
-.backlink-item:hover,
-.toc-item:hover {
-  color: #c9d1d9;
+.right-sidebar a:hover {
+  color: #c9d1d9 !important;
 }
 
-
-/* ============================================
-   CODE BLOCKS
-   ============================================ */
-
-.markdown-preview-view pre {
-  background: rgba(255, 255, 255, 0.03) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-radius: 6px !important;
-  padding: 16px !important;
-  font-size: 13px !important;
-  line-height: 1.6 !important;
-}
-
-.markdown-preview-view code {
-  font-size: 12px !important;
-  background: rgba(255, 255, 255, 0.06) !important;
-  border-radius: 3px !important;
-  padding: 0.1em 0.4em !important;
-  color: #e3b341 !important;
-}
-
-.markdown-preview-view pre code {
-  background: transparent !important;
-  padding: 0 !important;
-  color: inherit !important;
-}
