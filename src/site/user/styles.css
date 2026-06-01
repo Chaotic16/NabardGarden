@@ -1,0 +1,48 @@
+.recall {
+  color: transparent;
+  background: rgba(255, 214, 102, 0.25);
+  border: 1px solid rgba(255, 214, 102, 0.6);
+  border-radius: 6px;
+  padding: 0.1em 0.4em;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* subtle hint that it's clickable */
+.recall:hover {
+  background: rgba(255, 214, 102, 0.4);
+  border-color: rgba(255, 214, 102, 0.9);
+}
+
+.recall:active {
+  background: rgba(255, 214, 102, 0.55);
+}
+
+.recall.revealed {
+  color: inherit;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: default;
+}
+
+.recall-controls {
+  margin: 12px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.recall-controls button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: var(--interactive-accent);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.recall-controls button:hover {
+  opacity: 0.85;
+}
