@@ -347,3 +347,45 @@ pre code {
   color: #c9d1d9 !important;
 }
 
+
+
+/* ============================================
+   SIDEBAR ELLIPSIS FIX
+   ============================================ */
+
+.sidebar-content,
+.filetree-sidebar {
+  overflow: hidden !important;
+}
+
+.filetree-sidebar li,
+.filetree-sidebar a {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: block !important;
+}
+
+.content {
+  margin: 0 auto !important;
+}
+
+.backlinks h4,
+.sidebar-right h4 {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  color: #484f58 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* ============================================
+   MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .content {
+    padding: 24px 20px !important;
+  }
+}
