@@ -23,7 +23,7 @@ Will talk about it more soon.
 > [!SUCCESS] File Information
 >  | File                                                                                                  | Created     | Last Modified | Edited       |
 > | ----------------------------------------------------------------------------------------------------- | ----------- | ------------- | ------------ |
-> | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Mem-Tables&Scaffolds\|Mem-Tables&Scaffolds]] | 12 Feb 2026 | 12 Feb 2026   | 109 days ago |
+> | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Mem-Tables&Scaffolds\|Mem-Tables&Scaffolds]] | 12 Feb 2026 | 12 Feb 2026   | 152 days ago |
 > 
 { .block-language-dataview}
 

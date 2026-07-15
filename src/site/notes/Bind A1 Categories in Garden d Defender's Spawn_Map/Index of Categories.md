@@ -35,7 +35,7 @@ These are all the ideas that I have been working on from quite a long time. They
 > [!SUCCESS] File Information
 >  | File                                                                                                | Created     | Last Modified | Edited       |
 > | --------------------------------------------------------------------------------------------------- | ----------- | ------------- | ------------ |
-> | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Index of Categories\|Index of Categories]] | 12 Sep 2025 | 10 Feb 2026   | 111 days ago |
+> | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Index of Categories\|Index of Categories]] | 12 Sep 2025 | 10 Feb 2026   | 154 days ago |
 > 
 { .block-language-dataview}
 

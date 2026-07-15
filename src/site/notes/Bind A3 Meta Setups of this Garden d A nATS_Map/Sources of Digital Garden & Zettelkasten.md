@@ -77,7 +77,7 @@ Lastly, in 2025 I was introduced to [[Maggie Appleton\|Maggie Appleton]] and her
 > [!SUCCESS] File Information
 >  | File                                                                                                                                      | Created     | Last Modified | Edited       |
 > | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------- | ------------ |
-> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Sources of Digital Garden & Zettelkasten\|Sources of Digital Garden & Zettelkasten]] | 20 Sep 2025 | 12 Feb 2026   | 109 days ago |
+> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Sources of Digital Garden & Zettelkasten\|Sources of Digital Garden & Zettelkasten]] | 20 Sep 2025 | 12 Feb 2026   | 152 days ago |
 > 
 { .block-language-dataview}
 

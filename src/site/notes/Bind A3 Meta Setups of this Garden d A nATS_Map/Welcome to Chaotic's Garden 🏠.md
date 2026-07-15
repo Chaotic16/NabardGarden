@@ -70,7 +70,7 @@ Note : Visit [[Properties & Workflow of my digital garden\|Properties & Workflow
 > [!SUCCESS] File Information
 >  | File                                                                                                                  | Created     | Last Modified | Edited       |
 > | --------------------------------------------------------------------------------------------------------------------- | ----------- | ------------- | ------------ |
-> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Welcome to Chaotic's Garden 🏠\|Welcome to Chaotic's Garden 🏠]] | 12 Sep 2025 | 21 Feb 2026   | 100 days ago |
+> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Welcome to Chaotic's Garden 🏠\|Welcome to Chaotic's Garden 🏠]] | 12 Sep 2025 | 21 Feb 2026   | 143 days ago |
 > 
 { .block-language-dataview}
 

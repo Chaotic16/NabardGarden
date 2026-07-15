@@ -11,6 +11,7 @@ This the list of all the ideas I have been working on in my Digital Garden. Idea
 
 | File                                                                                                                                               | Planted on 🌱      | Last Tended 🌻    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------- |
+| [[Mermaid diagrams\|Mermaid diagrams]]                                                                                                          | July 15, 2026      | July 15, 2026     |
 | [[Don't know if things work anymore or not.\|Don't know if things work anymore or not.]]                                                        | June 01, 2026      | June 01, 2026     |
 | [[Bind B1 ESI&Finance Topics d B Link_Map/Electronic Gold Receipts by NSE\|Electronic Gold Receipts by NSE]]                                    | May 11, 2026       | May 11, 2026      |
 | [[Bind B1 ESI&Finance Topics d B Link_Map/EPFO and Risky Audits\|EPFO and Risky Audits]]                                                        | May 11, 2026       | May 11, 2026      |
@@ -29,17 +30,17 @@ This the list of all the ideas I have been working on in my Digital Garden. Idea
 | [[2 Syllabus + Official Details/NABARD Syllabus Pics\|NABARD Syllabus Pics]]                                                                    | March 17, 2026     | March 24, 2026    |
 | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Chaotic's Garden Domain Name\|Chaotic's Garden Domain Name]]                                  | September 12, 2025 | March 24, 2026    |
 | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Welcome to Chaotic's Garden 🏠\|Welcome to Chaotic's Garden 🏠]]                              | September 12, 2025 | February 21, 2026 |
-| [[Bind A3 Meta Setups of this Garden d A nATS_Map/Dataview of my ideas with dates\|Dataview of my ideas with dates]]                            | September 12, 2025 | February 12, 2026 |
-| [[Bind A3 Meta Setups of this Garden d A nATS_Map/Sources of Digital Garden & Zettelkasten\|Sources of Digital Garden & Zettelkasten]]          | September 20, 2025 | February 12, 2026 |
 | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Mem-Clozed\|Mem-Clozed]]                                                                  | February 12, 2026  | February 12, 2026 |
 | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Mem-Tables&Scaffolds\|Mem-Tables&Scaffolds]]                                              | February 12, 2026  | February 12, 2026 |
-| [[Bind A3 Meta Setups of this Garden d A nATS_Map/Uploading Media in my Digital Garden\|Uploading Media in my Digital Garden]]                  | September 21, 2025 | February 10, 2026 |
+| [[Bind A3 Meta Setups of this Garden d A nATS_Map/Dataview of my ideas with dates\|Dataview of my ideas with dates]]                            | September 12, 2025 | February 12, 2026 |
+| [[Bind A3 Meta Setups of this Garden d A nATS_Map/Sources of Digital Garden & Zettelkasten\|Sources of Digital Garden & Zettelkasten]]          | September 20, 2025 | February 12, 2026 |
 | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Digitalgarden\|Digitalgarden]]                                                            | September 12, 2025 | February 10, 2026 |
 | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Index of Categories\|Index of Categories]]                                                | September 12, 2025 | February 10, 2026 |
 | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Mind Palace\|Mind Palace]]                                                                | October 27, 2025   | February 10, 2026 |
 | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Status - Forests🧶\|Status - Forests🧶]]                                                  | September 21, 2025 | February 10, 2026 |
 | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Status - Seedlings🌱\|Status - Seedlings🌱]]                                              | September 21, 2025 | February 10, 2026 |
 | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Status - Trees🌳🌲\|Status - Trees🌳🌲]]                                                  | September 21, 2025 | February 10, 2026 |
+| [[Bind A3 Meta Setups of this Garden d A nATS_Map/Uploading Media in my Digital Garden\|Uploading Media in my Digital Garden]]                  | September 21, 2025 | February 10, 2026 |
 
 { .block-language-dataview}
 
@@ -51,7 +52,7 @@ This the list of all the ideas I have been working on in my Digital Garden. Idea
 > [!SUCCESS] File Information
 >  | File                                                                                                                    | Created     | Last Modified | Edited       |
 > | ----------------------------------------------------------------------------------------------------------------------- | ----------- | ------------- | ------------ |
-> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Dataview of my ideas with dates\|Dataview of my ideas with dates]] | 12 Sep 2025 | 12 Feb 2026   | 109 days ago |
+> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Dataview of my ideas with dates\|Dataview of my ideas with dates]] | 12 Sep 2025 | 12 Feb 2026   | 152 days ago |
 > 
 { .block-language-dataview}
 

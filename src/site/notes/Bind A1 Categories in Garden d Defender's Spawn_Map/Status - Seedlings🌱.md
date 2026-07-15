@@ -26,7 +26,7 @@ Seedlings ---> Trees --- > Forests
 > [!SUCCESS] File Information
 >  | File                                                                                                  | Created     | Last Modified | Edited       |
 > | ----------------------------------------------------------------------------------------------------- | ----------- | ------------- | ------------ |
-> | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Status - Seedlings🌱\|Status - Seedlings🌱]] | 21 Sep 2025 | 10 Feb 2026   | 111 days ago |
+> | [[Bind A1 Categories in Garden d Defender's Spawn_Map/Status - Seedlings🌱\|Status - Seedlings🌱]] | 21 Sep 2025 | 10 Feb 2026   | 154 days ago |
 > 
 { .block-language-dataview}
 
