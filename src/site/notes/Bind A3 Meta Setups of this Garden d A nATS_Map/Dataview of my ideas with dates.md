@@ -13,6 +13,7 @@ This the list of all the ideas I have been working on in my Digital Garden. Idea
 | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------- |
 | [[Mermaid diagrams\|Mermaid diagrams]]                                                                                                          | July 15, 2026      | July 15, 2026     |
 | [[SEBI and AI\|SEBI and AI]]                                                                                                                    | July 15, 2026      | July 15, 2026     |
+| [[The ideas just keep on coming\|The ideas just keep on coming]]                                                                                | July 15, 2026      | July 15, 2026     |
 | [[Don't know if things work anymore or not.\|Don't know if things work anymore or not.]]                                                        | June 01, 2026      | June 01, 2026     |
 | [[Bind B1 ESI&Finance Topics d B Link_Map/Electronic Gold Receipts by NSE\|Electronic Gold Receipts by NSE]]                                    | May 11, 2026       | May 11, 2026      |
 | [[Bind B1 ESI&Finance Topics d B Link_Map/EPFO and Risky Audits\|EPFO and Risky Audits]]                                                        | May 11, 2026       | May 11, 2026      |
