@@ -8,12 +8,13 @@ We are testing how Mermaid Diagrams work in my Obsidian Digital garden
 
 ```mermaid
 flowchart TD
-    A["Human questions about death"] -->|narrows into| B["Possibility of consciousness surviving"]
-    C["Science versus spirituality"] -->|focuses debate toward| D["Can identity persist beyond biology?"]
+    A["Human <u>questions</u> about death"] -->|<u>narrows</u> into| B["Possibility of consciousness surviving"]
+    C["Science versus spirituality"] -->|focuses *debate* toward| D["Can identity persist <u>beyond</u> biology?"]
     B -->|becomes personal through| E["Did Sofi somehow return as Salomina?"]
-    D -->|collides directly with| E
+    D -->|<u>collides</u> directly with| E
 
 ```
+
 
 
 
