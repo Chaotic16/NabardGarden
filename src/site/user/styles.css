@@ -1,3 +1,62 @@
+/* ============================================
+   CLOZE RECALL
+   ============================================ */
+
+.recall {
+  color: transparent;
+  background: rgba(56, 139, 253, 0.06);
+  border: 1px solid rgba(56, 139, 253, 0.45);
+  border-bottom: 2px solid rgba(56, 139, 253, 0.7);
+  border-radius: 4px;
+  padding: 0.05em 0.35em;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  filter: blur(3px);
+  display: inline-block;
+}
+
+.recall:hover {
+  background: rgba(56, 139, 253, 0.12);
+  border-color: rgba(56, 139, 253, 0.7);
+  border-bottom-color: rgba(56, 139, 253, 1);
+}
+
+.recall.revealed {
+  color: #a5d6ff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(56, 139, 253, 0.4);
+  border-radius: 0;
+  padding-bottom: 1px;
+  filter: blur(0);
+  cursor: default;
+}
+
+.recall-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.recall-controls button {
+  padding: 4px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(56, 139, 253, 0.4);
+  background: rgba(56, 139, 253, 0.08);
+  color: #58a6ff;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.recall-controls button:hover {
+  background: rgba(56, 139, 253, 0.18);
+  border-color: rgba(56, 139, 253, 0.7);
+}
+
+
 .recall {
   color: transparent;
   background: rgba(56, 139, 253, 0.06);
