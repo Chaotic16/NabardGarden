@@ -1,49 +1,29 @@
 /* ============================================================
    CUSTOM STYLE — NABARD STUDY GARDEN
-   
    Scholar's Lamp Theme: warm amber-on-charcoal for deep focus.
    
-   WHAT THIS FILE DOES (safe to read, don't touch base.scss):
-   ── Background gradient instead of flat dark
-   ── Left sidebar slides in on hover, zero wasted left space
-   ── Right sidebar (graph/TOC/backlinks) slides in on hover
-   ── Cloze boxes: warm amber highlight instead of cold blue
-   ── Heading hierarchy: amber → sage → rose → sky
-   ── Tighter, breathable layout with more reading room
-   
-   HOW TO CUSTOMIZE (no code knowledge needed):
-   ── Colors: edit the CSS variables inside body { ... } below
-   ── Font size: change --dg-content-font-size
-   ── Content width: change --dg-content-max-width
-   ── Cloze color: change --cloze-h and --cloze-s (hue/saturation)
+   SAFE TO EDIT. Never touch digital-garden-base.scss.
    ============================================================ */
 
 /* ============================================================
-   THEME TOKENS — change these to retheme the whole site
+   COLOR TOKENS — change these to retheme the whole site
    ============================================================ */
 :root {
-  /* Palette */
-  --garden-amber:   #f5c842;   /* H1, cloze reveal, brand accent   */
-  --garden-sage:    #7ec8a0;   /* H2, blockquote border             */
-  --garden-rose:    #e88ca0;   /* H3                                */
-  --garden-sky:     #72b9d5;   /* H4, links                         */
-  --garden-muted:   #9ba3ae;   /* body text secondary               */
-  --garden-text:    #ddd9d0;   /* body text primary (warm white)    */
-
-  /* Cloze tweak — change hue (0-360) and saturation to recolor */
-  --cloze-h: 40;               /* 40 = amber; 220 = blue             */
-  --cloze-s: 90%;
-
-  /* Background layers */
-  --bg-core:  #1a1917;         /* center of radial gradient          */
-  --bg-edge:  #0f0d0b;         /* edges of radial gradient           */
-  --bg-mid:   #161412;         /* sidebar background                 */
+  --garden-amber:  #f5c842;   /* H1, cloze reveal, accent    */
+  --garden-sage:   #7ec8a0;   /* H2 headings                 */
+  --garden-rose:   #e88ca0;   /* H3 headings                 */
+  --garden-sky:    #72b9d5;   /* H4, links                   */
+  --garden-text:   #ddd9d0;   /* body text (warm white)      */
+  --garden-muted:  #9ba3ae;   /* secondary text              */
+  --bg-core:       #1a1917;   /* radial gradient center      */
+  --bg-edge:       #0f0d0b;   /* radial gradient edges       */
+  --bg-sidebar:    #141210;   /* sidebar panel background    */
 }
 
 /* ============================================================
-   BACKGROUND — warm radial gradient
+   BACKGROUND — warm radial gradient on html so it covers all
    ============================================================ */
-body {
+html {
   background: radial-gradient(
     ellipse at 55% 40%,
     var(--bg-core) 0%,
@@ -51,47 +31,50 @@ body {
     var(--bg-edge) 100%
   ) fixed !important;
   background-color: var(--bg-edge) !important;
+  min-height: 100%;
 }
 
 /* ============================================================
-   LAYOUT VARIABLES (override base.scss defaults)
+   LAYOUT VARIABLES
+   Key change: --dg-filetree-min-width stays non-zero so the
+   base CSS layout math doesn't break. We just reduce the gap.
    ============================================================ */
 body {
-  --dg-content-max-width:           900px;
+  --dg-content-max-width:           920px;
   --dg-content-padding-top:         52px;
   --dg-content-padding-top-mobile:  48px;
   --dg-content-font-size:           17.5px;
   --dg-content-line-height:         1.85;
 
-  /* Sidebar left — we hide it via CSS below, gap is irrelevant when hidden */
-  --dg-filetree-width:              230px;
-  --dg-filetree-min-width:          0px;   /* let content fill full width   */
-  --dg-filetree-gap:                0px;
-  --dg-filetree-padding:            16px 18px;
-  --dg-filetree-title-size:         22px;
+  /* Sidebar left — reduce gap so there's less dead space */
+  --dg-filetree-width:              210px;
+  --dg-filetree-min-width:          210px;   /* keep this — base CSS needs it */
+  --dg-filetree-gap:                20px;    /* was 40-80px, now tighter      */
+  --dg-filetree-padding:            14px 16px;
+  --dg-filetree-title-size:         20px;
 
   /* Sidebar right */
-  --dg-sidebar-gap:                 0px;
-  --dg-sidebar-max-width:           280px;
-  --dg-sidebar-top:                 60px;
+  --dg-sidebar-gap:                 24px;
+  --dg-sidebar-max-width:           270px;
+  --dg-sidebar-top:                 58px;
 
   /* Graph */
-  --dg-graph-width:                 220px;
-  --dg-graph-height:                200px;
-  --dg-graph-margin-bottom:         20px;
-  --dg-graph-border-radius:         10px;
+  --dg-graph-width:                 210px;
+  --dg-graph-height:                190px;
+  --dg-graph-margin-bottom:         18px;
+  --dg-graph-border-radius:         8px;
 
   /* TOC */
-  --dg-toc-font-size:               0.875rem;
-  --dg-toc-item-padding:            5px 0;
+  --dg-toc-font-size:               0.85rem;
+  --dg-toc-item-padding:            4px 0;
   --dg-toc-indent:                  1.1em;
-  --dg-toc-max-height:              70vh;
+  --dg-toc-max-height:              68vh;
 
   /* Backlinks */
-  --dg-backlinks-margin-top:        16px;
-  --dg-backlinks-max-height:        280px;
-  --dg-backlinks-title-size:        0.85rem;
-  --dg-backlinks-card-size:         0.82rem;
+  --dg-backlinks-margin-top:        14px;
+  --dg-backlinks-max-height:        260px;
+  --dg-backlinks-title-size:        0.83rem;
+  --dg-backlinks-card-size:         0.80rem;
 
   /* Search */
   --dg-search-box-width:            1100px;
@@ -103,14 +86,14 @@ body {
   --dg-search-results-max-height:   62vh;
 
   /* Navbar */
-  --dg-navbar-height:               52px;
+  --dg-navbar-height:               50px;
   --dg-navbar-search-margin:        14px;
-  --dg-logo-height:                 34px;
+  --dg-logo-height:                 32px;
   --dg-logo-margin:                 10px 14px;
 
   /* Note links */
   --dg-notelink-padding:            5px 10px 5px 12px;
-  --dg-notelink-size:               0.84rem;
+  --dg-notelink-size:               0.83rem;
   --dg-notelink-hover-bg:           rgba(245, 200, 66, 0.07);
   --dg-folder-margin:               4px 0 4px 2px;
   --dg-inner-folder-margin:         12px;
@@ -118,120 +101,48 @@ body {
 }
 
 /* ============================================================
-   LEFT SIDEBAR — slide-in on hover, flush to left edge
+   LEFT SIDEBAR — visible on hover, hidden when mouse away
+   
+   Strategy: DON'T move .filetree-wrapper (that breaks layout).
+   Instead make .filetree-sidebar (the inner content) invisible
+   by default and fade it in when the wrapper is hovered.
    ============================================================ */
 
-/* The sidebar sits at left:0 by default but slides out of view */
+/* Style the wrapper panel itself */
 .filetree-wrapper {
-  position: fixed !important;
-  left: -240px !important;         /* hidden off-screen                */
-  top: 0 !important;
-  height: 100vh !important;
-  width: 230px !important;
-  background: var(--bg-mid) !important;
+  background-color: var(--bg-sidebar) !important;
   border-right: 1px solid rgba(245, 200, 66, 0.08) !important;
-  box-shadow: none !important;
-  transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.28s ease !important;
-  z-index: 200 !important;
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
 }
 
-/* Reveal via invisible hover strip at left edge */
-body::before {
-  content: '';
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 18px;
-  height: 100vh;
-  z-index: 199;
-  /* invisible trigger zone */
+/* Hide the sidebar content by default */
+.filetree-sidebar {
+  opacity: 0 !important;
+  transition: opacity 0.22s ease !important;
+  pointer-events: none !important;
 }
 
-body:has(body::before:hover) .filetree-wrapper,
-.filetree-wrapper:hover,
-body:hover .filetree-wrapper:focus-within {
-  left: 0 !important;
+/* Reveal on hover */
+.filetree-wrapper:hover .filetree-sidebar {
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }
 
-/* Simpler: trigger on nearness to left edge */
-body:has(.filetree-wrapper:hover) .filetree-wrapper,
-.filetree-wrapper:hover {
-  left: 0 !important;
-  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5) !important;
-}
-
-/* Trigger zone — invisible element at far left */
-.sidebar-trigger-left {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 12px;
-  height: 100vh;
-  z-index: 201;
-  cursor: e-resize;
-}
-
-.sidebar-trigger-left:hover ~ .filetree-wrapper,
-.sidebar-trigger-left:hover + .filetree-wrapper {
-  left: 0 !important;
-}
-
-/* Content fills the full width now that sidebar is overlay */
-.content {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: var(--dg-content-max-width) !important;
-  padding-left: 28px !important;
-  padding-right: 28px !important;
-}
-
-/* ============================================================
-   RIGHT SIDEBAR (graph / TOC / backlinks) — slide-in on hover
-   ============================================================ */
-.sidebar {
-  position: fixed !important;
-  right: -300px !important;        /* hidden off-screen               */
-  top: var(--dg-sidebar-top) !important;
-  width: 270px !important;
-  height: calc(100vh - var(--dg-sidebar-top)) !important;
-  background: var(--bg-mid) !important;
-  border-left: 1px solid rgba(245, 200, 66, 0.08) !important;
-  padding: 16px !important;
-  overflow-y: auto !important;
-  transition: right 0.28s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.28s ease !important;
-  z-index: 150 !important;
-  box-shadow: none !important;
-}
-
-.sidebar:hover {
-  right: 0 !important;
-  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5) !important;
-}
-
-/* Right edge trigger strip */
-body::after {
-  content: '';
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 14px;
-  height: 100vh;
-  z-index: 149;
-}
-
-body:has(body::after:hover) .sidebar {
-  right: 0 !important;
+/* Sidebar title */
+.filetree-sidebar h1 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  color: var(--garden-amber) !important;
+  letter-spacing: 0.02em !important;
+  border-bottom: 1px solid rgba(245, 200, 66, 0.12) !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 /* ============================================================
    NAVBAR
    ============================================================ */
-nav, .navbar, header nav {
-  background: rgba(15, 13, 11, 0.92) !important;
+.navbar {
+  background: rgba(14, 12, 10, 0.92) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border-bottom: 1px solid rgba(245, 200, 66, 0.1) !important;
@@ -242,32 +153,30 @@ nav, .navbar, header nav {
    ============================================================ */
 h1 {
   color: var(--garden-amber) !important;
-  font-size: 2rem !important;
+  font-size: 1.9rem !important;
   font-weight: 700 !important;
-  letter-spacing: -0.01em;
   line-height: 1.25 !important;
   margin-top: 2rem !important;
   margin-bottom: 0.9rem !important;
-  padding-bottom: 0.55rem !important;
+  padding-bottom: 0.5rem !important;
   border-bottom: 1px solid rgba(245, 200, 66, 0.18) !important;
+  letter-spacing: -0.01em;
 }
 
 h2 {
   color: var(--garden-sage) !important;
-  font-size: 1.45rem !important;
+  font-size: 1.4rem !important;
   font-weight: 650 !important;
-  letter-spacing: -0.005em;
   line-height: 1.3 !important;
-  margin-top: 2.2rem !important;
-  margin-bottom: 0.7rem !important;
-  padding-top: 0.4rem !important;
-  padding-left: 0.7rem !important;
-  border-left: 3px solid rgba(126, 200, 160, 0.55) !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.65rem !important;
+  padding-left: 0.65rem !important;
+  border-left: 3px solid rgba(126, 200, 160, 0.5) !important;
 }
 
 h3 {
   color: var(--garden-rose) !important;
-  font-size: 1.18rem !important;
+  font-size: 1.15rem !important;
   font-weight: 600 !important;
   line-height: 1.35 !important;
   margin-top: 1.6rem !important;
@@ -276,17 +185,17 @@ h3 {
 
 h4 {
   color: var(--garden-sky) !important;
-  font-size: 1.02rem !important;
+  font-size: 0.98rem !important;
   font-weight: 600 !important;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   margin-top: 1.3rem !important;
   margin-bottom: 0.4rem !important;
 }
 
 h5, h6 {
   color: var(--garden-muted) !important;
-  font-size: 0.95rem !important;
+  font-size: 0.92rem !important;
   font-weight: 600 !important;
   margin-top: 1rem !important;
   margin-bottom: 0.4rem !important;
@@ -297,19 +206,25 @@ h5, h6 {
    ============================================================ */
 p {
   color: var(--garden-text);
-  margin: 1.15rem 0 !important;
-  letter-spacing: 0.2px;
+  margin: 1.1rem 0 !important;
+  letter-spacing: 0.15px;
 }
 
 ul, ol {
-  margin: 1rem 0 !important;
-  padding-left: 1.8rem !important;
+  margin: 0.9rem 0 !important;
+  padding-left: 1.75rem !important;
   line-height: 1.85;
 }
 
 li {
-  margin: 0.5rem 0 !important;
+  margin: 0.45rem 0 !important;
   color: var(--garden-text);
+}
+
+hr {
+  border: none !important;
+  border-top: 1px solid rgba(245, 200, 66, 0.1) !important;
+  margin: 2rem 0 !important;
 }
 
 /* ============================================================
@@ -318,24 +233,24 @@ li {
 a {
   color: var(--garden-sky) !important;
   text-decoration: none !important;
-  border-bottom: 1px solid rgba(114, 185, 213, 0.3) !important;
-  transition: color 0.18s ease, border-color 0.18s ease !important;
+  border-bottom: 1px solid rgba(114, 185, 213, 0.28) !important;
+  transition: color 0.16s ease, border-color 0.16s ease !important;
 }
 
 a:hover {
   color: #a8d8ec !important;
-  border-bottom-color: rgba(114, 185, 213, 0.7) !important;
+  border-bottom-color: rgba(114, 185, 213, 0.65) !important;
 }
 
 /* Internal wiki-links get amber tint */
 a.internal-link {
   color: #d4ab3e !important;
-  border-bottom-color: rgba(212, 171, 62, 0.3) !important;
+  border-bottom-color: rgba(212, 171, 62, 0.28) !important;
 }
 
 a.internal-link:hover {
   color: var(--garden-amber) !important;
-  border-bottom-color: rgba(245, 200, 66, 0.7) !important;
+  border-bottom-color: rgba(245, 200, 66, 0.65) !important;
 }
 
 /* ============================================================
@@ -343,33 +258,33 @@ a.internal-link:hover {
    ============================================================ */
 blockquote {
   background: rgba(126, 200, 160, 0.05) !important;
-  border-left: 3px solid rgba(126, 200, 160, 0.45) !important;
+  border-left: 3px solid rgba(126, 200, 160, 0.42) !important;
   border-radius: 0 6px 6px 0 !important;
-  margin: 1.5rem 0 !important;
-  padding: 0.9rem 1.1rem !important;
+  margin: 1.4rem 0 !important;
+  padding: 0.85rem 1rem !important;
   font-style: italic;
-  color: #b8c4bb !important;
+  color: #b4bec0 !important;
 }
 
 /* ============================================================
    CODE
    ============================================================ */
 code {
-  background: rgba(0, 0, 0, 0.35) !important;
+  background: rgba(0, 0, 0, 0.32) !important;
   border: 1px solid rgba(255, 255, 255, 0.07) !important;
   padding: 2px 6px !important;
   border-radius: 4px !important;
-  font-size: 0.88em !important;
-  color: #e0a06a !important;          /* warm orange, not red */
+  font-size: 0.87em !important;
+  color: #e0a06a !important;
 }
 
 pre {
-  background: rgba(0, 0, 0, 0.45) !important;
+  background: rgba(0, 0, 0, 0.42) !important;
   border: 1px solid rgba(255, 255, 255, 0.06) !important;
-  border-left: 3px solid rgba(114, 185, 213, 0.4) !important;
-  padding: 1rem 1.2rem !important;
+  border-left: 3px solid rgba(114, 185, 213, 0.38) !important;
+  padding: 1rem 1.15rem !important;
   border-radius: 6px !important;
-  margin: 1.5rem 0 !important;
+  margin: 1.4rem 0 !important;
   overflow-x: auto;
 }
 
@@ -388,64 +303,43 @@ img {
   max-width: 100% !important;
   height: auto !important;
   border-radius: 8px !important;
-  margin: 1.5rem 0 !important;
+  margin: 1.4rem 0 !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45) !important;
   border: 1px solid rgba(255, 255, 255, 0.05) !important;
-}
-
-/* ============================================================
-   HORIZONTAL RULE
-   ============================================================ */
-hr {
-  border: none !important;
-  border-top: 1px solid rgba(245, 200, 66, 0.12) !important;
-  margin: 2rem 0 !important;
-}
-
-/* ============================================================
-   CALLOUTS / ADMONITIONS
-   ============================================================ */
-.callout {
-  border-radius: 6px !important;
-  border-left-width: 3px !important;
-  margin: 1.5rem 0 !important;
-  padding: 0.85rem 1rem !important;
 }
 
 /* ============================================================
    CLOZE RECALL — warm amber study boxes
    ============================================================ */
 
-/* Hidden state */
 .recall {
   color: transparent !important;
   background: rgba(245, 180, 40, 0.09) !important;
-  border: 1.5px solid rgba(245, 180, 40, 0.38) !important;
-  border-bottom: 2px solid rgba(245, 180, 40, 0.65) !important;
+  border: 1.5px solid rgba(245, 180, 40, 0.36) !important;
+  border-bottom: 2px solid rgba(245, 180, 40, 0.62) !important;
   border-radius: 5px !important;
   padding: 0.07em 0.38em !important;
   cursor: pointer !important;
   filter: blur(3px) !important;
   display: inline-block !important;
   font-weight: 500 !important;
-  transition: all 0.28s cubic-bezier(0.23, 1, 0.32, 1) !important;
-  box-shadow: 0 1px 6px rgba(245, 180, 40, 0.08) !important;
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1) !important;
+  box-shadow: 0 1px 6px rgba(245, 180, 40, 0.07) !important;
 }
 
 .recall:hover {
   background: rgba(245, 180, 40, 0.16) !important;
-  border-color: rgba(245, 180, 40, 0.6) !important;
-  border-bottom-color: rgba(245, 180, 40, 0.95) !important;
-  box-shadow: 0 3px 14px rgba(245, 180, 40, 0.2) !important;
+  border-color: rgba(245, 180, 40, 0.58) !important;
+  border-bottom-color: rgba(245, 180, 40, 0.9) !important;
+  box-shadow: 0 3px 14px rgba(245, 180, 40, 0.18) !important;
   transform: translateY(-1px) !important;
 }
 
-/* Revealed state */
 .recall.revealed {
   color: var(--garden-amber) !important;
   background: transparent !important;
   border: none !important;
-  border-bottom: 2px solid rgba(245, 180, 40, 0.5) !important;
+  border-bottom: 2px solid rgba(245, 180, 40, 0.48) !important;
   border-radius: 0 !important;
   padding: 0 0.15em !important;
   padding-bottom: 2px !important;
@@ -453,12 +347,12 @@ hr {
   box-shadow: none !important;
   cursor: default !important;
   font-weight: 600 !important;
+  transform: none !important;
 }
 
 .recall.revealed:hover {
   border-bottom-color: var(--garden-amber) !important;
-  background: rgba(245, 180, 40, 0.06) !important;
-  transform: none !important;
+  background: rgba(245, 180, 40, 0.05) !important;
 }
 
 /* Control buttons */
@@ -469,16 +363,16 @@ hr {
   margin-top: 0.8rem !important;
   align-items: center !important;
   flex-wrap: wrap !important;
-  padding: 0.8rem 1rem !important;
+  padding: 0.75rem 1rem !important;
   background: rgba(245, 180, 40, 0.04) !important;
-  border-left: 2px solid rgba(245, 180, 40, 0.3) !important;
+  border-left: 2px solid rgba(245, 180, 40, 0.28) !important;
   border-radius: 0 6px 6px 0 !important;
 }
 
 .recall-controls button {
   padding: 5px 15px !important;
   border-radius: 20px !important;
-  border: 1.5px solid rgba(245, 180, 40, 0.4) !important;
+  border: 1.5px solid rgba(245, 180, 40, 0.38) !important;
   background: rgba(245, 180, 40, 0.08) !important;
   color: var(--garden-amber) !important;
   font-size: 12px !important;
@@ -486,13 +380,13 @@ hr {
   letter-spacing: 0.07em !important;
   text-transform: uppercase !important;
   cursor: pointer !important;
-  transition: all 0.22s ease !important;
+  transition: all 0.2s ease !important;
 }
 
 .recall-controls button:hover {
-  background: rgba(245, 180, 40, 0.18) !important;
-  border-color: rgba(245, 180, 40, 0.75) !important;
-  box-shadow: 0 2px 10px rgba(245, 180, 40, 0.18) !important;
+  background: rgba(245, 180, 40, 0.17) !important;
+  border-color: rgba(245, 180, 40, 0.7) !important;
+  box-shadow: 0 2px 10px rgba(245, 180, 40, 0.16) !important;
   transform: translateY(-1px) !important;
 }
 
@@ -501,121 +395,27 @@ hr {
 }
 
 /* ============================================================
-   FILE TREE SIDEBAR INTERNALS
+   SCROLLBAR — subtle amber tint
    ============================================================ */
-
-/* Remove any default padding-left on the sidebar itself */
-.filetree-wrapper > * {
-  padding-left: 0 !important;
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 200, 66, 0.18);
+  border-radius: 10px;
 }
-
-/* Sidebar title */
-.filetree-title, .site-name {
-  font-size: 1rem !important;
-  font-weight: 700 !important;
-  color: var(--garden-amber) !important;
-  letter-spacing: 0.03em !important;
-  margin-bottom: 12px !important;
-  padding: 14px 18px 10px !important;
-  border-bottom: 1px solid rgba(245, 200, 66, 0.1) !important;
-}
-
-/* Note links in sidebar */
-.sidebar-item-link, .note-link-entry {
-  transition: background 0.15s ease, padding-left 0.15s ease !important;
-}
-
-.sidebar-item-link:hover, .note-link-entry:hover {
-  padding-left: 16px !important;
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 200, 66, 0.35);
 }
 
 /* ============================================================
    RESPONSIVE
    ============================================================ */
-@media (max-width: 1024px) {
-  body {
-    --dg-content-max-width: 820px;
-  }
-}
-
 @media (max-width: 768px) {
   body {
-    --dg-content-max-width: 100%;
-    --dg-content-padding-top: 44px;
     --dg-content-font-size: 16.5px;
+    --dg-content-padding-top: 44px;
   }
-
-  .content {
-    padding-left: 18px !important;
-    padding-right: 18px !important;
-  }
-
-  h1 { font-size: 1.65rem !important; }
-  h2 { font-size: 1.3rem !important; }
-  h3 { font-size: 1.08rem !important; }
-
-  /* On mobile, sidebar is accessible via hamburger; remove hover trick */
-  .filetree-wrapper {
-    transition: left 0.22s ease !important;
-  }
+  h1 { font-size: 1.6rem !important; }
+  h2 { font-size: 1.25rem !important; }
+  h3 { font-size: 1.05rem !important; }
 }
-
-/* ============================================================
-   UTILITY — subtle scrollbar
-   ============================================================ */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(245, 200, 66, 0.2);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(245, 200, 66, 0.38);
-}
-
-/* ============================================================
-   ALTERNATIVE THEMES — uncomment ONE block to switch
-   ============================================================
-
-   --- THEME: FOREST (deep green) ---
-   :root {
-     --garden-amber:  #a3d977;
-     --garden-sage:   #5fc3a0;
-     --garden-rose:   #f5d67b;
-     --garden-sky:    #70bfcc;
-     --bg-core:       #141a14;
-     --bg-edge:       #0a0f0a;
-     --bg-mid:        #111611;
-   }
-
-   --- THEME: MINIMAL (cool grey) ---
-   :root {
-     --garden-amber:  #e0e0e0;
-     --garden-sage:   #8ab4c8;
-     --garden-rose:   #c8a0b8;
-     --garden-sky:    #78a8c0;
-     --bg-core:       #18191c;
-     --bg-edge:       #0e0f11;
-     --bg-mid:        #141518;
-   }
-
-   --- THEME: EMBER (orange warmth) ---
-   :root {
-     --garden-amber:  #f08c50;
-     --garden-sage:   #e8c066;
-     --garden-rose:   #e87878;
-     --garden-sky:    #80b8d8;
-     --bg-core:       #1a1510;
-     --bg-edge:       #100c08;
-     --bg-mid:        #15110d;
-   }
-
-============================================================ */
