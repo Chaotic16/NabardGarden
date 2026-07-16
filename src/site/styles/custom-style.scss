@@ -351,5 +351,35 @@ img {
   
   p {
     font-size: 16px !important;
+  
   }
 }
+
+/* ============================================
+   SIDEBAR HIDE/SHOW ON HOVER
+   ============================================ */
+
+/* Hide sidebar by default */
+.filetree-wrapper {
+  position: fixed !important;
+  left: -280px !important;
+  transition: left 0.3s ease !important;
+  z-index: 1000 !important;
+}
+
+/* Show sidebar when you hover over left edge */
+body:hover .filetree-wrapper,
+.filetree-wrapper:hover {
+  left: 0 !important;
+}
+
+/* Adjust content margin when sidebar is hidden */
+.content {
+  margin-left: auto !important;
+}
+
+
+
+
+
+
