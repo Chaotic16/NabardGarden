@@ -112,3 +112,47 @@
   background: rgba(56, 139, 253, 0.18);
   border-color: rgba(56, 139, 253, 0.7);
 }
+
+/* ============================================
+   LAYOUT OVERRIDES - FORCE CENTER CONTENT
+   ============================================ */
+
+body {
+  background: var(--background-primary) !important;
+}
+
+.container,
+.wrapper,
+.main-wrapper,
+.content,
+.main-content,
+article {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 40px 24px !important;
+}
+
+h1 {
+  margin: 1.5rem 0 1rem 0 !important;
+  line-height: 1.3 !important;
+}
+
+h2 {
+  margin: 1.8rem 0 0.8rem 0 !important;
+  line-height: 1.3 !important;
+}
+
+p {
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  margin: 1.2rem 0 !important;
+}
+
+ul, ol {
+  line-height: 1.8 !important;
+  margin: 1.2rem 0 !important;
+}
+
+
+
+
