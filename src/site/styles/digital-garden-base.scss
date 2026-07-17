@@ -49,7 +49,7 @@ body {
     --dg-filetree-width: 250px;
     --dg-filetree-min-width: 250px;
     --dg-filetree-padding: 10px 20px;
-    --dg-filetree-gap: 80px;
+    --dg-filetree-gap: 20px;
     --dg-filetree-title-size: 32px;
 
     /* TOC (Table of Contents) Variables */
@@ -631,7 +631,7 @@ body:has(.content.canvas-page) .sidebar {
     );
     min-width: var(--dg-filetree-min-width);
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .filetree-sidebar {
