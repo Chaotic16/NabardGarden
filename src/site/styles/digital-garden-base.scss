@@ -33,7 +33,7 @@ body {
     --dg-sidebar-container-height: 87%;
 
     /* Graph Variables */
-    --dg-graph-width: 250px;
+    --dg-graph-width: 180px;
     --dg-graph-height: 250px;
     --dg-graph-border-radius: 10px;
     --dg-graph-margin-bottom: 20px;
@@ -54,7 +54,7 @@ body {
 
     /* TOC (Table of Contents) Variables */
     --dg-toc-padding: 5px;
-    --dg-toc-font-size: 1rem;
+    --dg-toc-font-size: 0.9rem;
     --dg-toc-max-height: 70vh;
     --dg-toc-title-size: 0.75rem;
     --dg-toc-item-padding: 4px 0 4px 0;
@@ -396,7 +396,7 @@ body:has(.content.canvas-page) .sidebar {
 }
 
 .sidebar-container {
-    padding-right: var(--dg-sidebar-container-padding);
+    padding-right: --dg-sidebar-container-padding: 10px;
     width: 100%;
     overflow-y: auto;
     display: flex;
