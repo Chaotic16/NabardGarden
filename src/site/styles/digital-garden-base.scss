@@ -18,7 +18,7 @@ body {
     ***/
 
     /* Layout Variables */
-    --dg-content-max-width: 950px;
+    --dg-content-max-width: 700px;
     --dg-content-padding-top: 90px;
     --dg-content-padding-top-mobile: 75px;
     --dg-content-font-size: 18px;
@@ -26,14 +26,14 @@ body {
 
     /* Sidebar (Right) Variables */
     --dg-sidebar-top: 75px;
-    --dg-sidebar-gap: 20px;
+    --dg-sidebar-gap: 80px;
     --dg-sidebar-min-width: 25px;
-    --dg-sidebar-max-width: 240px;
+    --dg-sidebar-max-width: 350px;
     --dg-sidebar-container-padding: 20px;
     --dg-sidebar-container-height: 87%;
 
     /* Graph Variables */
-    --dg-graph-width: 180px;
+    --dg-graph-width: 250px;
     --dg-graph-height: 250px;
     --dg-graph-border-radius: 10px;
     --dg-graph-margin-bottom: 20px;
@@ -46,15 +46,15 @@ body {
     --dg-graph-border-color: var(--background-secondary);
 
     /* Filetree (Left Sidebar) Variables */
-    --dg-filetree-width: 180px;
-    --dg-filetree-min-width: 180px;
-    --dg-filetree-padding: 10px 2px;
-    --dg-filetree-gap: 10px;
+    --dg-filetree-width: 250px;
+    --dg-filetree-min-width: 250px;
+    --dg-filetree-padding: 10px 20px;
+    --dg-filetree-gap: 20px;
     --dg-filetree-title-size: 32px;
 
     /* TOC (Table of Contents) Variables */
     --dg-toc-padding: 5px;
-    --dg-toc-font-size: 0.9rem;
+    --dg-toc-font-size: 1rem;
     --dg-toc-max-height: 70vh;
     --dg-toc-title-size: 0.75rem;
     --dg-toc-item-padding: 4px 0 4px 0;
@@ -161,7 +161,8 @@ img {
     // 1. Never overlap filetree (minimum)
     // 2. Try to center in viewport
     // 3. But shift left if needed to leave room for sidebar
-   margin-left: calc(var(--dg-filetree-width) + 20px);,
+    margin-left: max(
+        calc(var(--dg-filetree-min-width) + var(--dg-filetree-gap)),
         min(
             calc((100vw - var(--dg-content-max-width)) / 2),
             calc(100vw - var(--dg-content-max-width) - var(--dg-sidebar-max-width) - var(--dg-sidebar-gap) - 20px)
@@ -396,7 +397,7 @@ body:has(.content.canvas-page) .sidebar {
 }
 
 .sidebar-container {
-    padding-right: --dg-sidebar-container-padding: 10px;
+    padding-right: var(--dg-sidebar-container-padding);
     width: 100%;
     overflow-y: auto;
     display: flex;
