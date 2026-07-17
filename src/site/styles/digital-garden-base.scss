@@ -18,7 +18,7 @@ body {
     ***/
 
     /* Layout Variables */
-    --dg-content-max-width: 700px;
+    --dg-content-max-width: 950px;
     --dg-content-padding-top: 90px;
     --dg-content-padding-top-mobile: 75px;
     --dg-content-font-size: 18px;
@@ -26,9 +26,9 @@ body {
 
     /* Sidebar (Right) Variables */
     --dg-sidebar-top: 75px;
-    --dg-sidebar-gap: 80px;
+    --dg-sidebar-gap: 20px;
     --dg-sidebar-min-width: 25px;
-    --dg-sidebar-max-width: 350px;
+    --dg-sidebar-max-width: 240px;
     --dg-sidebar-container-padding: 20px;
     --dg-sidebar-container-height: 87%;
 
@@ -46,9 +46,9 @@ body {
     --dg-graph-border-color: var(--background-secondary);
 
     /* Filetree (Left Sidebar) Variables */
-    --dg-filetree-width: 150px;
-    --dg-filetree-min-width: 150px;
-    --dg-filetree-padding: 10px 8px;
+    --dg-filetree-width: 180px;
+    --dg-filetree-min-width: 180px;
+    --dg-filetree-padding: 10px 2px;
     --dg-filetree-gap: 10px;
     --dg-filetree-title-size: 32px;
 
@@ -161,8 +161,7 @@ img {
     // 1. Never overlap filetree (minimum)
     // 2. Try to center in viewport
     // 3. But shift left if needed to leave room for sidebar
-    margin-left: max(
-        calc(var(--dg-filetree-min-width) + var(--dg-filetree-gap)),
+   margin-left: calc(var(--dg-filetree-width) + 20px);,
         min(
             calc((100vw - var(--dg-content-max-width)) / 2),
             calc(100vw - var(--dg-content-max-width) - var(--dg-sidebar-max-width) - var(--dg-sidebar-gap) - 20px)
