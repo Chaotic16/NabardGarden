@@ -18,7 +18,7 @@ body {
     ***/
 
     /* Layout Variables */
-    --dg-content-max-width: 700px;
+    --dg-content-max-width: 900px;
     --dg-content-padding-top: 90px;
     --dg-content-padding-top-mobile: 75px;
     --dg-content-font-size: 18px;
@@ -26,10 +26,10 @@ body {
 
     /* Sidebar (Right) Variables */
     --dg-sidebar-top: 75px;
-    --dg-sidebar-gap: 80px;
+    --dg-sidebar-gap: 20px;
     --dg-sidebar-min-width: 25px;
-    --dg-sidebar-max-width: 350px;
-    --dg-sidebar-container-padding: 20px;
+    --dg-sidebar-max-width: 250px;
+    --dg-sidebar-container-padding: 10px;
     --dg-sidebar-container-height: 87%;
 
     /* Graph Variables */
@@ -46,10 +46,10 @@ body {
     --dg-graph-border-color: var(--background-secondary);
 
     /* Filetree (Left Sidebar) Variables */
-    --dg-filetree-width: 250px;
-    --dg-filetree-min-width: 250px;
+    --dg-filetree-width: 180px;
+    --dg-filetree-min-width: 180px;
     --dg-filetree-padding: 10px 20px;
-    --dg-filetree-gap: 80px;
+    --dg-filetree-gap: 15px;
     --dg-filetree-title-size: 32px;
 
     /* TOC (Table of Contents) Variables */
