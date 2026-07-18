@@ -1,5 +1,14 @@
 body {
-    --dg-filetree-gap: 20px;      /* Was 80px - remove left waste */
-    --dg-sidebar-gap: 20px;        /* Was 80px - remove right waste */
-    --dg-sidebar-container-padding: 10px; /* Was 20px - tighter sidebar */
+    /* REDUCE THE MINIMUM FILETREE WIDTH - this compacts left side */
+    --dg-filetree-min-width: 150px;  /* Was 250px - make sidebar narrower */
+    
+    /* KEEP GAPS REASONABLE - don't change these */
+    --dg-filetree-gap: 15px;   /* Space between filetree and content */
+    --dg-sidebar-gap: 15px;    /* Space between content and right sidebar */
+    
+    /* OPTIONAL: Tighten sidebar padding if needed */
+    --dg-sidebar-container-padding: 12px;  /* Was 20px */
+    
+    /* Optional: Reduce right sidebar width to save space */
+    --dg-sidebar-max-width: 300px;  /* Was 350px */
 }
