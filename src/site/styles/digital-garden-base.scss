@@ -18,23 +18,23 @@ body {
     ***/
 
     /* Layout Variables */
-    --dg-content-max-width: 950px;
-    --dg-content-padding-top: 50px;
-    --dg-content-padding-top-mobile: 50px;
-    --dg-content-font-size: 16px;
+    --dg-content-max-width: 700px;
+    --dg-content-padding-top: 90px;
+    --dg-content-padding-top-mobile: 75px;
+    --dg-content-font-size: 18px;
     --dg-content-line-height: 1.5;
 
     /* Sidebar (Right) Variables */
     --dg-sidebar-top: 75px;
-    --dg-sidebar-gap: 20px;
+    --dg-sidebar-gap: 80px;
     --dg-sidebar-min-width: 25px;
-    --dg-sidebar-max-width: 250px;
-    --dg-sidebar-container-padding: 5px;
-    --dg-sidebar-container-height: 35%;
+    --dg-sidebar-max-width: 350px;
+    --dg-sidebar-container-padding: 20px;
+    --dg-sidebar-container-height: 87%;
 
     /* Graph Variables */
-    --dg-graph-width: 130px;
-    --dg-graph-height: 130px;
+    --dg-graph-width: 250px;
+    --dg-graph-height: 250px;
     --dg-graph-border-radius: 10px;
     --dg-graph-margin-bottom: 20px;
     --dg-graph-fullscreen-width: 90vw;
@@ -46,11 +46,11 @@ body {
     --dg-graph-border-color: var(--background-secondary);
 
     /* Filetree (Left Sidebar) Variables */
-    --dg-filetree-width: 100px;
-    --dg-filetree-min-width: 100px;
-    --dg-filetree-padding: 0px 0px;
-    --dg-filetree-gap: 2px;
-    --dg-filetree-title-size: 16px;
+    --dg-filetree-width: 250px;
+    --dg-filetree-min-width: 250px;
+    --dg-filetree-padding: 10px 20px;
+    --dg-filetree-gap: 80px;
+    --dg-filetree-title-size: 32px;
 
     /* TOC (Table of Contents) Variables */
     --dg-toc-padding: 5px;
@@ -58,14 +58,14 @@ body {
     --dg-toc-max-height: 70vh;
     --dg-toc-title-size: 0.75rem;
     --dg-toc-item-padding: 4px 0 4px 0;
-    --dg-toc-indent: 0.5em;
+    --dg-toc-indent: 1em;
 
     /* Backlinks Variables */
     --dg-backlinks-margin-top: 10px;
     --dg-backlinks-max-height: 250px;
     --dg-backlinks-title-size: 0.9rem;
-    --dg-backlinks-card-size: 0.55rem;
-    --dg-backlinks-card-padding: 3px 0;
+    --dg-backlinks-card-size: 0.85rem;
+    --dg-backlinks-card-padding: 6px 0;
     --dg-backlinks-icon-size: 14px;
 
     /* Search Variables */
@@ -91,7 +91,7 @@ body {
     /* Search Button Variables */
     --dg-search-btn-radius: 8px;
     --dg-search-btn-height: 32px;
-    --dg-search-btn-padding: 0 5px;
+    --dg-search-btn-padding: 0 10px;
     --dg-search-btn-gap: 8px;
     --dg-search-btn-font-size: 0.85rem;
     --dg-search-btn-icon-size: 14px;
@@ -161,14 +161,8 @@ img {
     // 1. Never overlap filetree (minimum)
     // 2. Try to center in viewport
     // 3. But shift left if needed to leave room for sidebar
-    margin-left: max(
-        calc(var(--dg-filetree-min-width) + var(--dg-filetree-gap)),
-        min(
-            calc((100vw - var(--dg-content-max-width)) / 2),
-            calc(100vw - var(--dg-content-max-width) - var(--dg-sidebar-max-width) - var(--dg-sidebar-gap) - 20px)
-        )
-    );
-    margin-right: auto;
+    margin-left: calc(var(--dg-filetree-min-width) + var(--dg-filetree-gap));
+    margin-right: var(--dg-sidebar-gap);
     font-size: var(--dg-content-font-size);
     line-height: var(--dg-content-line-height);
     margin-top: 0;
