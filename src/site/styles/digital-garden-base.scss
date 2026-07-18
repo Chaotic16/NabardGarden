@@ -19,9 +19,9 @@ body {
 
     /* Layout Variables */
     --dg-content-max-width: 900px;
-    --dg-content-padding-top: 90px;
-    --dg-content-padding-top-mobile: 75px;
-    --dg-content-font-size: 18px;
+    --dg-content-padding-top: 50px;
+    --dg-content-padding-top-mobile: 50px;
+    --dg-content-font-size: 16px;
     --dg-content-line-height: 1.5;
 
     /* Sidebar (Right) Variables */
@@ -29,12 +29,12 @@ body {
     --dg-sidebar-gap: 20px;
     --dg-sidebar-min-width: 25px;
     --dg-sidebar-max-width: 250px;
-    --dg-sidebar-container-padding: 10px;
-    --dg-sidebar-container-height: 87%;
+    --dg-sidebar-container-padding: 5px;
+    --dg-sidebar-container-height: 35%;
 
     /* Graph Variables */
-    --dg-graph-width: 250px;
-    --dg-graph-height: 250px;
+    --dg-graph-width: 130px;
+    --dg-graph-height: 130px;
     --dg-graph-border-radius: 10px;
     --dg-graph-margin-bottom: 20px;
     --dg-graph-fullscreen-width: 90vw;
@@ -46,9 +46,9 @@ body {
     --dg-graph-border-color: var(--background-secondary);
 
     /* Filetree (Left Sidebar) Variables */
-    --dg-filetree-width: 180px;
-    --dg-filetree-min-width: 180px;
-    --dg-filetree-padding: 10px 20px;
+    --dg-filetree-width: 80px;
+    --dg-filetree-min-width: 80px;
+    --dg-filetree-padding: 5px 10px;
     --dg-filetree-gap: 15px;
     --dg-filetree-title-size: 32px;
 
@@ -58,14 +58,14 @@ body {
     --dg-toc-max-height: 70vh;
     --dg-toc-title-size: 0.75rem;
     --dg-toc-item-padding: 4px 0 4px 0;
-    --dg-toc-indent: 1em;
+    --dg-toc-indent: 0.5em;
 
     /* Backlinks Variables */
     --dg-backlinks-margin-top: 10px;
     --dg-backlinks-max-height: 250px;
     --dg-backlinks-title-size: 0.9rem;
-    --dg-backlinks-card-size: 0.85rem;
-    --dg-backlinks-card-padding: 6px 0;
+    --dg-backlinks-card-size: 0.55rem;
+    --dg-backlinks-card-padding: 3px 0;
     --dg-backlinks-icon-size: 14px;
 
     /* Search Variables */
