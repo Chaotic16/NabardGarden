@@ -18,8 +18,8 @@ body {
     ***/
 
     /* Layout Variables */
-    --dg-content-max-width: 900px;
-    --dg-content-padding-top: 50px;
+    --dg-content-max-width: 700px;
+    --dg-content-padding-top: 90px;
     --dg-content-padding-top-mobile: 75px;
     --dg-content-font-size: 18px;
     --dg-content-line-height: 1.5;
@@ -33,8 +33,8 @@ body {
     --dg-sidebar-container-height: 87%;
 
     /* Graph Variables */
-    --dg-graph-width: 120px;
-    --dg-graph-height: 120px;
+    --dg-graph-width: 250px;
+    --dg-graph-height: 250px;
     --dg-graph-border-radius: 10px;
     --dg-graph-margin-bottom: 20px;
     --dg-graph-fullscreen-width: 90vw;
@@ -46,10 +46,10 @@ body {
     --dg-graph-border-color: var(--background-secondary);
 
     /* Filetree (Left Sidebar) Variables */
-    --dg-filetree-width: 200px;
-    --dg-filetree-min-width: 200px;
-    --dg-filetree-padding: 5px 10px;
-    --dg-filetree-gap: 20px;
+    --dg-filetree-width: 250px;
+    --dg-filetree-min-width: 250px;
+    --dg-filetree-padding: 10px 20px;
+    --dg-filetree-gap: 80px;
     --dg-filetree-title-size: 32px;
 
     /* TOC (Table of Contents) Variables */
@@ -161,8 +161,14 @@ img {
     // 1. Never overlap filetree (minimum)
     // 2. Try to center in viewport
     // 3. But shift left if needed to leave room for sidebar
-    margin-left: calc(var(--dg-filetree-min-width) + var(--dg-filetree-gap));
-    margin-right: var(--dg-sidebar-gap);
+    margin-left: max(
+        calc(var(--dg-filetree-min-width) + var(--dg-filetree-gap)),
+        min(
+            calc((100vw - var(--dg-content-max-width)) / 2),
+            calc(100vw - var(--dg-content-max-width) - var(--dg-sidebar-max-width) - var(--dg-sidebar-gap) - 20px)
+        )
+    );
+    margin-right: auto;
     font-size: var(--dg-content-font-size);
     line-height: var(--dg-content-line-height);
     margin-top: 0;
