@@ -18,7 +18,7 @@ body {
     ***/
 
     /* Layout Variables */
-    --dg-content-max-width: 1080px;
+    --dg-content-max-width: 900px;
     --dg-content-padding-top: 50px;
     --dg-content-padding-top-mobile: 50px;
     --dg-content-font-size: 16px;
@@ -46,8 +46,8 @@ body {
     --dg-graph-border-color: var(--background-secondary);
 
     /* Filetree (Left Sidebar) Variables */
-    --dg-filetree-width: 500px;
-    --dg-filetree-min-width: 500px;
+    --dg-filetree-width: 200px;
+    --dg-filetree-min-width: 200px;
     --dg-filetree-padding: 5px 10px;
     --dg-filetree-gap: 5px;
     --dg-filetree-title-size: 32px;
@@ -91,7 +91,7 @@ body {
     /* Search Button Variables */
     --dg-search-btn-radius: 8px;
     --dg-search-btn-height: 32px;
-    --dg-search-btn-padding: 0 10px;
+    --dg-search-btn-padding: 0 5px;
     --dg-search-btn-gap: 8px;
     --dg-search-btn-font-size: 0.85rem;
     --dg-search-btn-icon-size: 14px;
