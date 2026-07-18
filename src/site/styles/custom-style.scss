@@ -1,14 +1,1 @@
-body {
-    /* REDUCE THE MINIMUM FILETREE WIDTH - this compacts left side */
-    --dg-filetree-min-width: 10px;  /* Was 250px - make sidebar narrower */
-    
-    /* KEEP GAPS REASONABLE - don't change these */
-    --dg-filetree-gap: 5px;   /* Space between filetree and content */
-    --dg-sidebar-gap: 5px;    /* Space between content and right sidebar */
-    
-    /* OPTIONAL: Tighten sidebar padding if needed */
-    --dg-sidebar-container-padding: 2x;  /* Was 20px */
-    
-    /* Optional: Reduce right sidebar width to save space */
-    --dg-sidebar-max-width: 10px;  /* Was 350px */
-}
+
