@@ -40,9 +40,9 @@ These are all the ideas that I have been working on from quite a long time. They
 > [!TIP]- Connected Files
 >  | File                                                                                                                |
 > | ------------------------------------------------------------------------------------------------------------------- |
+> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Home 🏠\|Home 🏠]]                                             |
 > | [[0 Templates Folder/Connections Template\|Connections Template]]                                                |
 > | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Status - Forests🧶\|Status - Forests🧶]]     |
-> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Home 🏠\|Home 🏠]]                                             |
 > | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Status - Seedlings🌱\|Status - Seedlings🌱]] |
 > | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Status - Trees🌳🌲\|Status - Trees🌳🌲]]     |
 > | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Index of Categories\|Index of Categories]]   |

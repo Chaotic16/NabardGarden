@@ -33,8 +33,8 @@ Seedlings ---> Trees --- > Forests
 > [!TIP]- Connected Files
 >  | File                                                                                                                                                    |
 > | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Media - What all will be in this Digital Garden\|Media - What all will be in this Digital Garden]] |
 > | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Home 🏠\|Home 🏠]]                                                                                 |
+> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Media - What all will be in this Digital Garden\|Media - What all will be in this Digital Garden]] |
 > | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Index of Categories\|Index of Categories]]                                       |
 > 
 { .block-language-dataview}
