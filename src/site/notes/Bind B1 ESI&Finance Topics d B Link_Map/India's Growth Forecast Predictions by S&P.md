@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/bind-b1-esi-and-finance-topics-d-b-link-map/india-s-growth-forecast-predictions-by-s-and-p/","dg-note-properties":{"status":null,"tags":null,"Memory Stage":null}}
+{"dg-publish":true,"permalink":"/bind-b1-esi-and-finance-topics-d-b-link-map/india-s-growth-forecast-predictions-by-s-and-p/","dg-note-properties":{"status":null,"tags":null}}
 ---
 
 

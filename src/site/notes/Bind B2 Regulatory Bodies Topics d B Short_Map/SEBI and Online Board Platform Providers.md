@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/bind-b2-regulatory-bodies-topics-d-b-short-map/sebi-and-online-board-platform-providers/","dg-note-properties":{"status":null,"tags":null,"Memory Stage":null}}
+{"dg-publish":true,"permalink":"/bind-b2-regulatory-bodies-topics-d-b-short-map/sebi-and-online-board-platform-providers/","dg-note-properties":{"status":null,"tags":null}}
 ---
 
 ### **Simple explanation**

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/bind-b2-regulatory-bodies-topics-d-b-short-map/rbi-and-specified-non-financial-assets/","dg-note-properties":{"status":null,"tags":null,"Memory Stage":null}}
+{"dg-publish":true,"permalink":"/bind-b2-regulatory-bodies-topics-d-b-short-map/rbi-and-specified-non-financial-assets/","dg-note-properties":{"status":null,"tags":null}}
 ---
 
 ### **Simple explanation**

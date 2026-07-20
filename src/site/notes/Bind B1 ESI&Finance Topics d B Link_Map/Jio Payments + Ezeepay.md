@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/bind-b1-esi-and-finance-topics-d-b-link-map/jio-payments-ezeepay/","dg-note-properties":{"status":null,"tags":null,"Memory Stage":null}}
+{"dg-publish":true,"permalink":"/bind-b1-esi-and-finance-topics-d-b-link-map/jio-payments-ezeepay/","dg-note-properties":{"status":null,"tags":null}}
 ---
 
 ### **Simple explanation**
