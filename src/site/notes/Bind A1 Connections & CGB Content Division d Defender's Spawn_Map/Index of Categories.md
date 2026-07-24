@@ -29,9 +29,9 @@ These are all the ideas that I have been working on from quite a long time. They
 
 
 > [!SUCCESS] File Information
->  | File                                                                                                              | Created     | Last Modified | Edited |
-> | ----------------------------------------------------------------------------------------------------------------- | ----------- | ------------- | ------ |
-> | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Index of Categories\|Index of Categories]] | 12 Sep 2025 | 21 Jul 2026   | Today  |
+>  | File                                                                                                              | Created     | Last Modified | Edited     |
+> | ----------------------------------------------------------------------------------------------------------------- | ----------- | ------------- | ---------- |
+> | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Index of Categories\|Index of Categories]] | 12 Sep 2025 | 21 Jul 2026   | 2 days ago |
 > 
 { .block-language-dataview}
 

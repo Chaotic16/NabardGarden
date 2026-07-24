@@ -21,9 +21,9 @@ Seedlings ---> Trees --- > Forests
 
 
 > [!SUCCESS] File Information
->  | File                                                                                                            | Created     | Last Modified | Edited |
-> | --------------------------------------------------------------------------------------------------------------- | ----------- | ------------- | ------ |
-> | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Status - Forests🧶\|Status - Forests🧶]] | 21 Sep 2025 | 21 Jul 2026   | Today  |
+>  | File                                                                                                            | Created     | Last Modified | Edited     |
+> | --------------------------------------------------------------------------------------------------------------- | ----------- | ------------- | ---------- |
+> | [[Bind A1 Connections & CGB Content Division d Defender's Spawn_Map/Status - Forests🧶\|Status - Forests🧶]] | 21 Sep 2025 | 21 Jul 2026   | 2 days ago |
 > 
 { .block-language-dataview}
 

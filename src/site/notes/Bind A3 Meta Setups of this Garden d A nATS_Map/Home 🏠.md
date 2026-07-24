@@ -67,9 +67,9 @@
 
 
 > [!SUCCESS] File Information
->  | File                                                                    | Created     | Last Modified | Edited |
-> | ----------------------------------------------------------------------- | ----------- | ------------- | ------ |
-> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Home 🏠\|Home 🏠]] | 12 Sep 2025 | 21 Jul 2026   | Today  |
+>  | File                                                                    | Created     | Last Modified | Edited     |
+> | ----------------------------------------------------------------------- | ----------- | ------------- | ---------- |
+> | [[Bind A3 Meta Setups of this Garden d A nATS_Map/Home 🏠\|Home 🏠]] | 12 Sep 2025 | 21 Jul 2026   | 2 days ago |
 > 
 { .block-language-dataview}
 
